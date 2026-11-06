@@ -18,7 +18,7 @@ export default function Index() {
       </Link>
     </View>
   );
-}
+} 
 
 const styles = StyleSheet.create({
   container: {
