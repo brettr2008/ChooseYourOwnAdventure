@@ -1,9 +1,13 @@
+import { Image } from 'expo-image';
 import { Link } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
+
+const cover = require('@/assets/images/ranger.jpg');
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <Image source={cover} style={styles.image} />
       <Text style={styles.title}>Ending 4: The Wrong Trail</Text>
       <Text style ={styles.text}>
         You take the wrong trail and get lost. Luckily, you find a ranger who helps you get home.
@@ -27,7 +31,8 @@ const styles = StyleSheet.create({
   title: {
     color: 'yellow',
     fontSize: 30,
-    padding: 20
+    padding: 20,
+    textAlign: 'center'
   },
   text: {
     color: '#fff',
@@ -40,4 +45,9 @@ const styles = StyleSheet.create({
     color: '#fff',
     padding: 12
   },
+  image: {
+    width: 300,
+    height: 300,
+    borderRadius: 20
+  }
 });

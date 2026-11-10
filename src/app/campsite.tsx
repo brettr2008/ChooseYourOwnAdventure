@@ -1,9 +1,13 @@
+import { Image } from 'expo-image';
 import { Link } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
+
+const cover = require('@/assets/images/campsite.webp');
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <Image source={cover} style={styles.image} />
       <Text style={styles.title}>The Campsite</Text>
       <Text style ={styles.text}>
         You find an empty cabin. It starts raining, so you take shelter. You notice another trail outside. You can stay or keep going.
@@ -31,7 +35,8 @@ const styles = StyleSheet.create({
   title: {
     color: 'yellow',
     fontSize: 30,
-    padding: 20
+    padding: 20,
+    textAlign: 'center'
   },
   text: {
     color: '#fff',
@@ -44,4 +49,9 @@ const styles = StyleSheet.create({
     color: '#fff',
     padding: 12
   },
+  image: {
+    width: 350,
+    height: 200,
+    borderRadius: 20
+  }
 });
