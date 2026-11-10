@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   button: {
     fontSize: 18,
-    color: '#fff',
+    color: '#2ff',
     padding: 12
   },
   image: {
